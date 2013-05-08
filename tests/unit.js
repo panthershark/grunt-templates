@@ -2,7 +2,7 @@ var tap = require('tap'),
     test = tap.test,
     grunt = require('grunt'),
     fs = require('fs'),
-    outFile = './output/templates.js';
+    outFiles = ['./output/templates.js', './output/templates2.js'];
 
 // remove old output file.
 fs.unlink('./output');
@@ -16,7 +16,11 @@ test('Test template compilation', function(t) {
   }, function(err, result) {
 
     t.notOk(err, 'Should not return error');
-    t.ok(fs.existsSync(outFile), 'Output file should exist.');
+
+    outFiles.forEach(function(file) {
+      t.ok(fs.existsSync(file), 'Output file should exist.');
+    });
+    
     t.end();
   });  
 
