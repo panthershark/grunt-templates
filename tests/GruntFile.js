@@ -3,7 +3,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
 
 
-    'grunt-requirejs-templates': {
+    'grunt-templates': {
       task1: {
         viewResolver: {
           view: {
@@ -26,6 +26,6 @@ module.exports = function(grunt) {
   });
 
   grunt.loadTasks("../tasks");
-  grunt.registerTask('default', ['grunt-requirejs-templates']);
+  grunt.registerTask('default', ['grunt-templates']);
 
 };

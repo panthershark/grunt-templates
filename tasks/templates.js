@@ -4,7 +4,7 @@ var Handlebars = require('broadway-handlebars'),
 module.exports = function(grunt) {
 
   // Create a new task.
-  grunt.registerMultiTask('grunt-requirejs-templates', 'Export templates to requirejs module as a hash', function() {
+  grunt.registerMultiTask('grunt-templates', 'Export templates to requirejs module as a hash', function() {
     var options = this.data,
         done = this.async(),
         app = new broadway.App();

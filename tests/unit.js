@@ -12,7 +12,7 @@ test('Test template compilation', function(t) {
 
   grunt.util.spawn({
     cmd: "grunt",
-    args: ["--config", "test/grunt.js", "grunt-requirejs-templates"]
+    args: ["--config", "test/grunt.js", "grunt-templates"]
   }, function(err, result) {
 
     t.notOk(err, 'Should not return error');
