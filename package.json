@@ -1,0 +1,21 @@
+{
+  "name": "grunt-templates",
+  "version": "0.0.0",
+  "description": "ERROR: No README.md file found!",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap ./tests/unit.js"
+  },
+  "dependencies": {
+    "broadway-handlebars": "0.2.x",
+    "broadway": "0.2.x",
+    "grunt": "0.4.x"
+  },
+
+  "devDependencies": {
+    "tap": "*"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD"
+}
